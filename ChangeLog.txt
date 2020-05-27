@@ -1,0 +1,7 @@
+                          NAFNoise Change Log
+                          --------------------
+
+v1.00  14-Jul-2005  Pat Moriarty
+ Created and released NAFNoise. Note that the TNO model is the original model from Guidati's thesis, not the one described in Moriarty et al. 2005.
+ The new version of the TNO model will be in the next release.
+

@@ -1,0 +1,36 @@
+Input file for 2-D aeroacoustic code                                                   
+S809 Airfoil                                             
+---------------------- Atmospheric Constants -----------------------------------------            
+337.7559    C0                 SPEED OF SOUND               METERS/SEC
+1.4529e-5	  VISC               KINEMATIC VISCOSITY          M2/SEC            
+1.225000    RHO                Air Density			            KG/M3                    
+---------------------- Noise Calc Settings -----------------------------------------  
+2           ITRIP         Boudary layer trip no trip = 0 BPM, heavy trip = 1 (BPM only), light trip = 2
+2       	  X_BLMethod    Integer describing calculation method for boundary layer properties,  = 1 BPM = 2 Xfoil      
+1       	  TBL_Method    Integer describing TBL noise calculation = 0 none =1 BPM = 2 TNO  
+3       	  TI_Method     Integer describing TI noise calculation = 0 none =1 Amiet (flat plate) = 2 Guidati = 3 Simplified Guidati                                                                                  
+1           IBLUNT        FLAG TO COMPUTE BLUNTNESS NOISE    = 0 No, =1 Yes                 
+1           ILAM          FLAG TO COMPUTE LBL NOISE          = 0 No, =1 Yes      
+---------------------- Airfoil Properties -----------------------------------------                                                                     
+0.2286      Chord Length                   (m)
+0.509       Airfoil Span                   (m)
+63.9200     Freestream Velocity            (m/s)
+3.0000      Angle of Attack                (deg)
+0.00021	    Trailing Edge Thickness        (m)
+12.5        PSI trailing edge solid angle  (deg)
+---------------------- Xfoil Inputs ---------------------------------------------- 
+0.02        XTR_upper = upper surface trip location  (normalized chord length)
+0.1         XTR_lower = upper surface trip location  (normalized chord length)
+.FALSE.     ISNACA = .TRUE. if Airfoil is a NACA else .FALSE. 
+s809.dat    Airfoil File Name or NACA Number (if spaces use quotes)
+---------------------- Turbulent Inflow Noise Inputs -----------------------------
+0.050       Turbulence Intensity                 (%)                                
+0.06	      Turbulence Length Scale              (m)                             
+0.02        Thickness @ 1% chord                 (normalized thickness)
+0.12        Thickness @ 10% chord                (normalized thickness)
+40          Number of Streamlines                (Guidati full model)
+0.005       Distance between streamlines         (Guidati full model)
+---------------------- Observer Location ----------------------------------------- 
+1.22	      Observer Distance                  (m)
+90.	        PHI angle relative to spanline     (deg)
+90.         THETA angle relative to chordline  (deg)
